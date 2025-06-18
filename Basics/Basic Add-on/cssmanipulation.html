@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Manipulation</title>
+    <style>
+      button {
+        background-color: black;
+        color: white;
+      }
+      button:focus {
+        background: white;
+        color: black;
+      }
+      .black {
+        background: black;
+      }
+    </style>
+  </head>
+
+  <body class="goDark">
+    <button>Dark theme</button>
+
+    <script>
+      function makeItBlack() {
+        let goDark = document.querySelector(".goDark");
+        goDark.classList.add("black");
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", makeItBlack);
+    </script>
+  </body>
+</html>
